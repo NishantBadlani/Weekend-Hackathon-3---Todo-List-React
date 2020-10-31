@@ -76,7 +76,7 @@ function App() {
         </div>
       ) : null}
 
-      <input id="task" type="textarea" value={inputValue} onChange={handleChange}></input>
+      <input id="task" type="textarea" value={inputValue} onChange={handleChange} disabled={!inputValue}></input>
       <button id="btn" onClick={handleClick}>
         Add Task
       </button>
