@@ -21,8 +21,10 @@ export default function Task(props) {
   };
 
   return (
-    <li className="list" key={task.id}>
-      {task.text}
+    <div>
+      <li className="list" key={task.id}>
+        {task.text}
+      </li>
       <button className="edit" onClick={() => handleEdit(task.id)}>
         Edit
       </button>
@@ -37,6 +39,6 @@ export default function Task(props) {
           </button>
         </div>
       ) : null}
-    </li>
+    </div>
   );
 }
