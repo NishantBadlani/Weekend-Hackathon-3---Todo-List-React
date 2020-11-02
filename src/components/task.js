@@ -22,7 +22,7 @@ export default function Task(props) {
 
   return (
     <div>
-      <li className="list" key={task.id}>
+      <li className="list">
         {task.text}
       </li>
       <button className="edit" onClick={() => handleEdit(task.id)}>
